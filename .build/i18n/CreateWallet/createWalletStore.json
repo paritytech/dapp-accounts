@@ -1,0 +1,14 @@
+[
+  {
+    "id": "createWallet.steps.type",
+    "defaultMessage": "wallet type"
+  },
+  {
+    "id": "createWallet.steps.details",
+    "defaultMessage": "wallet details"
+  },
+  {
+    "id": "createWallet.steps.info",
+    "defaultMessage": "wallet informaton"
+  }
+]

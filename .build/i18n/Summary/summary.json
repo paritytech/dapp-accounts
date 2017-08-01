@@ -1,0 +1,10 @@
+[
+  {
+    "id": "accounts.summary.minedBlock",
+    "defaultMessage": "Mined at block #{blockNumber}"
+  },
+  {
+    "id": "accounts.tooltips.owner",
+    "defaultMessage": "{name} (owner)"
+  }
+]

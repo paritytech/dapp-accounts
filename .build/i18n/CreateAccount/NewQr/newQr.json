@@ -1,0 +1,30 @@
+[
+  {
+    "id": "createAccount.newQr.address.hint",
+    "defaultMessage": "the network address for the account"
+  },
+  {
+    "id": "createAccount.newQr.address.label",
+    "defaultMessage": "address"
+  },
+  {
+    "id": "createAccount.newQr.name.hint",
+    "defaultMessage": "a descriptive name for the account"
+  },
+  {
+    "id": "createAccount.newQr.name.label",
+    "defaultMessage": "account name"
+  },
+  {
+    "id": "createAccount.newQr.description.hint",
+    "defaultMessage": "a description for the account"
+  },
+  {
+    "id": "createAccount.newQr.description.label",
+    "defaultMessage": "account description"
+  },
+  {
+    "id": "createAccount.newQr.summary",
+    "defaultMessage": "Use the built-in machine camera to scan to QR code of the account you wish to attach as an external account. External accounts are signed on the external device."
+  }
+]

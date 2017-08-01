@@ -1,0 +1,30 @@
+[
+  {
+    "id": "createWallet.info.created",
+    "defaultMessage": "{name} has been {deployedOrAdded} at"
+  },
+  {
+    "id": "createWallet.info.deployed",
+    "defaultMessage": "deployed"
+  },
+  {
+    "id": "createWallet.info.added",
+    "defaultMessage": "added"
+  },
+  {
+    "id": "createWallet.info.copyAddress",
+    "defaultMessage": "copy address to clipboard"
+  },
+  {
+    "id": "createWallet.info.owners",
+    "defaultMessage": "The following are wallet owners"
+  },
+  {
+    "id": "createWallet.info.numOwners",
+    "defaultMessage": "{numOwners} owners are required to confirm a transaction."
+  },
+  {
+    "id": "createWallet.info.dayLimit",
+    "defaultMessage": "The daily limit is set to {dayLimit} ETH."
+  }
+]

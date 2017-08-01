@@ -1,0 +1,70 @@
+[
+  {
+    "id": "createWallet.details.address.hint",
+    "defaultMessage": "the wallet contract address"
+  },
+  {
+    "id": "createWallet.details.address.label",
+    "defaultMessage": "wallet address"
+  },
+  {
+    "id": "createWallet.details.name.hint",
+    "defaultMessage": "the local name for this wallet"
+  },
+  {
+    "id": "createWallet.details.name.label",
+    "defaultMessage": "wallet name"
+  },
+  {
+    "id": "createWallet.details.description.hint",
+    "defaultMessage": "the local description for this wallet"
+  },
+  {
+    "id": "createWallet.details.description.label",
+    "defaultMessage": "wallet description (optional)"
+  },
+  {
+    "id": "createWallet.details.nameMulti.hint",
+    "defaultMessage": "the local name for this wallet"
+  },
+  {
+    "id": "createWallet.details.nameMulti.label",
+    "defaultMessage": "wallet name"
+  },
+  {
+    "id": "createWallet.details.descriptionMulti.hint",
+    "defaultMessage": "the local description for this wallet"
+  },
+  {
+    "id": "createWallet.details.descriptionMulti.label",
+    "defaultMessage": "wallet description (optional)"
+  },
+  {
+    "id": "createWallet.details.ownerMulti.hint",
+    "defaultMessage": "the owner account for this contract"
+  },
+  {
+    "id": "createWallet.details.ownerMulti.label",
+    "defaultMessage": "from account (contract owner)"
+  },
+  {
+    "id": "createWallet.details.ownersMulti.label",
+    "defaultMessage": "other wallet owners"
+  },
+  {
+    "id": "createWallet.details.ownersMultiReq.hint",
+    "defaultMessage": "number of required owners to accept a transaction"
+  },
+  {
+    "id": "createWallet.details.ownersMultiReq.label",
+    "defaultMessage": "required owners"
+  },
+  {
+    "id": "createWallet.details.dayLimitMulti.hint",
+    "defaultMessage": "amount of ETH spendable without confirmations"
+  },
+  {
+    "id": "createWallet.details.dayLimitMulti.label",
+    "defaultMessage": "wallet day limit"
+  }
+]

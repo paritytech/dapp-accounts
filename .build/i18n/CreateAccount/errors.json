@@ -1,0 +1,34 @@
+[
+  {
+    "id": "errors.duplicateName",
+    "defaultMessage": "the name already exists"
+  },
+  {
+    "id": "errors.noFile",
+    "defaultMessage": "select a valid wallet file to import"
+  },
+  {
+    "id": "errors.noKey",
+    "defaultMessage": "you need to provide the raw private key"
+  },
+  {
+    "id": "errors.noMatchPassword",
+    "defaultMessage": "the supplied passwords does not match"
+  },
+  {
+    "id": "errors.noMatchBackupPhrase",
+    "defaultMessage": "the supplied recovery phrase does not match"
+  },
+  {
+    "id": "errors.noMatchPhraseBackedUp",
+    "defaultMessage": "type \"I have written down the phrase\""
+  },
+  {
+    "id": "errors.noName",
+    "defaultMessage": "you need to specify a valid name"
+  },
+  {
+    "id": "errors.invalidKey",
+    "defaultMessage": "the raw key needs to be hex, 64 characters in length and contain the prefix \"0x\""
+  }
+]

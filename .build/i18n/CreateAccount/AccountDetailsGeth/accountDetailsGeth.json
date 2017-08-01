@@ -1,0 +1,6 @@
+[
+  {
+    "id": "createAccount.accountDetailsGeth.imported",
+    "defaultMessage": "You have completed the import of {number} addresses from the Geth keystore. These will now be available in your accounts list as a normal account, along with their associated balances on the network."
+  }
+]

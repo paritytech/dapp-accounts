@@ -1,0 +1,34 @@
+[
+  {
+    "id": "createAccount.newImport.name.hint",
+    "defaultMessage": "a descriptive name for the account"
+  },
+  {
+    "id": "createAccount.newImport.name.label",
+    "defaultMessage": "account name"
+  },
+  {
+    "id": "createAccount.newImport.hint.hint",
+    "defaultMessage": "(optional) a hint to help with remembering the password"
+  },
+  {
+    "id": "createAccount.newImport.hint.label",
+    "defaultMessage": "password hint"
+  },
+  {
+    "id": "createAccount.newImport.password.hint",
+    "defaultMessage": "the password to unlock the wallet"
+  },
+  {
+    "id": "createAccount.newImport.password.label",
+    "defaultMessage": "password"
+  },
+  {
+    "id": "createAccount.newImport.file.hint",
+    "defaultMessage": "the wallet file for import"
+  },
+  {
+    "id": "createAccount.newImport.file.label",
+    "defaultMessage": "wallet file"
+  }
+]

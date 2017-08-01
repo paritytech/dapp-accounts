@@ -1,0 +1,26 @@
+[
+  {
+    "id": "accounts.button.newAccount",
+    "defaultMessage": "account"
+  },
+  {
+    "id": "accounts.button.restoreAccount",
+    "defaultMessage": "restore"
+  },
+  {
+    "id": "accounts.button.export",
+    "defaultMessage": "export"
+  },
+  {
+    "id": "accounts.title",
+    "defaultMessage": "Accounts Overview"
+  },
+  {
+    "id": "accounts.button.vaults",
+    "defaultMessage": "vaults"
+  },
+  {
+    "id": "accounts.button.newWallet",
+    "defaultMessage": "wallet"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "createAccount.creationType.fromNew.description",
+    "defaultMessage": "Selecting your identity icon and specifying the password"
+  },
+  {
+    "id": "createAccount.creationType.fromNew.label",
+    "defaultMessage": "New Account"
+  },
+  {
+    "id": "createAccount.creationType.fromQr.description",
+    "defaultMessage": "Attach an externally managed account via QR code"
+  },
+  {
+    "id": "createAccount.creationType.fromQr.label",
+    "defaultMessage": "External Account"
+  },
+  {
+    "id": "createAccount.creationType.fromGeth.description",
+    "defaultMessage": "Import accounts from the Geth keystore with the original password"
+  },
+  {
+    "id": "createAccount.creationType.fromGeth.label",
+    "defaultMessage": "Geth keystore"
+  },
+  {
+    "id": "createAccount.creationType.fromJSON.description",
+    "defaultMessage": "Import an industry-standard JSON keyfile with the original password"
+  },
+  {
+    "id": "createAccount.creationType.fromJSON.label",
+    "defaultMessage": "JSON file"
+  },
+  {
+    "id": "createAccount.creationType.fromRaw.description",
+    "defaultMessage": "Enter a previously created raw private key with a new password"
+  },
+  {
+    "id": "createAccount.creationType.fromRaw.label",
+    "defaultMessage": "Private key"
+  },
+  {
+    "id": "createAccount.creationType.fromPresale.description",
+    "defaultMessage": "Import an Ethereum presale wallet file with the original password"
+  },
+  {
+    "id": "createAccount.creationType.fromPresale.label",
+    "defaultMessage": "Presale wallet"
+  },
+  {
+    "id": "createAccount.creationType.info",
+    "defaultMessage": "Please select the type of account you want to create. Either create an account via name & password, or import it from a variety of existing sources. From here the wizard will guide you through the process of completing your account creation."
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "createWallet.button.cancel",
+    "defaultMessage": "Cancel"
+  },
+  {
+    "id": "createWallet.button.done",
+    "defaultMessage": "Done"
+  },
+  {
+    "id": "createWallet.button.next",
+    "defaultMessage": "Next"
+  },
+  {
+    "id": "createWallet.button.add",
+    "defaultMessage": "Add"
+  },
+  {
+    "id": "createWallet.button.create",
+    "defaultMessage": "Create"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "createWallet.type.multisig.label",
+    "defaultMessage": "Multi-Sig wallet"
+  },
+  {
+    "id": "createWallet.type.multisig.description",
+    "defaultMessage": "Create/Deploy a {link} Wallet"
+  },
+  {
+    "id": "createWallet.type.multisig.link",
+    "defaultMessage": "standard multi-signature"
+  },
+  {
+    "id": "createWallet.type.watch.label",
+    "defaultMessage": "Watch a wallet"
+  },
+  {
+    "id": "createWallet.type.watch.description",
+    "defaultMessage": "Add an existing wallet to your accounts"
+  }
+]

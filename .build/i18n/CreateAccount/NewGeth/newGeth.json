@@ -1,0 +1,10 @@
+[
+  {
+    "id": "createAccount.newGeth.available",
+    "defaultMessage": "There are currently {count} importable keys available from the Geth keystore which are not already available on your Parity instance. Select the accounts you wish to import and move to the next step to complete the import."
+  },
+  {
+    "id": "createAccount.newGeth.noKeys",
+    "defaultMessage": "There are currently no importable keys available from the Geth keystore, which are not already available on your Parity instance"
+  }
+]

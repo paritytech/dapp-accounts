@@ -1,0 +1,14 @@
+[
+  {
+    "id": "export.accounts.button.cancel",
+    "defaultMessage": "Cancel"
+  },
+  {
+    "id": "export.accounts.button.export",
+    "defaultMessage": "Export"
+  },
+  {
+    "id": "export.accounts.title",
+    "defaultMessage": "Export an Account"
+  }
+]

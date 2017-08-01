@@ -1,0 +1,10 @@
+[
+  {
+    "id": "export.setPassword.label",
+    "defaultMessage": "Password"
+  },
+  {
+    "id": "export.setPassword.hint",
+    "defaultMessage": "Enter password Here"
+  }
+]

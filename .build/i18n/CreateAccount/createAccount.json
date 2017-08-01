@@ -1,0 +1,58 @@
+[
+  {
+    "id": "createAccount.title.createType",
+    "defaultMessage": "creation type"
+  },
+  {
+    "id": "createAccount.title.createAccount",
+    "defaultMessage": "create account"
+  },
+  {
+    "id": "createAccount.title.accountInfo",
+    "defaultMessage": "account information"
+  },
+  {
+    "id": "createAccount.title.backupPhrase",
+    "defaultMessage": "confirm recovery phrase"
+  },
+  {
+    "id": "createAccount.title.importAccount",
+    "defaultMessage": "import account"
+  },
+  {
+    "id": "createAccount.title.restoreAccount",
+    "defaultMessage": "restore account"
+  },
+  {
+    "id": "createAccount.title.qr",
+    "defaultMessage": "external account"
+  },
+  {
+    "id": "createAccount.button.cancel",
+    "defaultMessage": "Cancel"
+  },
+  {
+    "id": "createAccount.button.back",
+    "defaultMessage": "Back"
+  },
+  {
+    "id": "createAccount.button.next",
+    "defaultMessage": "Next"
+  },
+  {
+    "id": "createAccount.button.import",
+    "defaultMessage": "Import"
+  },
+  {
+    "id": "createAccount.button.print",
+    "defaultMessage": "Print Phrase"
+  },
+  {
+    "id": "createAccount.button.done",
+    "defaultMessage": "Done"
+  },
+  {
+    "id": "createAccount.button.create",
+    "defaultMessage": "Create"
+  }
+]

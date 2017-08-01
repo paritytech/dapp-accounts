@@ -1,0 +1,30 @@
+[
+  {
+    "id": "createAccount.accountDetails.address.hint",
+    "defaultMessage": "the network address for the account"
+  },
+  {
+    "id": "createAccount.accountDetails.address.label",
+    "defaultMessage": "address"
+  },
+  {
+    "id": "createAccount.accountDetails.phrase.hint",
+    "defaultMessage": "the account recovery phrase"
+  },
+  {
+    "id": "createAccount.accountDetails.phrase.backedUp",
+    "defaultMessage": "Type \"I have written down the phrase\" below to confirm it is backed up."
+  },
+  {
+    "id": "createAccount.accountDetails.phrase.label",
+    "defaultMessage": "owner recovery phrase"
+  },
+  {
+    "id": "createAccount.accountDetails.phrase.backup",
+    "defaultMessage": "Please back up the recovery phrase now. Make sure to keep it private and secure, it allows full and unlimited access to the account."
+  },
+  {
+    "id": "createAccount.accountDetails.phrase.backupConfirm",
+    "defaultMessage": "Type your recovery phrase now."
+  }
+]
