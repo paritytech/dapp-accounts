@@ -171,5 +171,5 @@ module.exports = {
         comments: false
       }
     })
-  ]
+  ].filter((plugin) => plugin)
 };
