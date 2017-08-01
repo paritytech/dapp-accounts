@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@parity/ui": "paritytech/js-ui#037782bd16e8abf1c169143aa61749a44b94489b",
-    "@parity/shared": "paritytech/js-shared#9bb1d291d8752a827613889498e380fcd3afa8da",
+    "@parity/shared": "paritytech/js-shared#32d6709cb2ee267553aa4292a482cd787af3df81",
     "@parity/api": "paritytech/js-api#ade4a6750292a2918676039ea53eea20c4c728bc",
     "@parity/dapp-vaults": "paritytech/dapp-vaults#c86131351e20be678e470704aa6f1fa7b610ee84",
     "react": "15.6.1",

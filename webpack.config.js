@@ -25,7 +25,7 @@ module.exports = {
     : '#source-map',
   context: __dirname,
   entry: {
-    accounts: './index.js'
+    bundle: './index.js'
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -156,10 +156,10 @@ module.exports = {
     fs: 'empty'
   },
   plugins: [
-     new HtmlWebpackPlugin({
-      filename: 'accounts.html',
+    new HtmlWebpackPlugin({
+      filename: '../index.html',
       template: './index.ejs',
-      chunks: [ 'accounts' ]
+      chunks: [ 'bundle' ]
     })
   ]
 };
