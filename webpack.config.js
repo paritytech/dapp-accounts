@@ -32,6 +32,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
+    publicPath: 'dist/',
     filename: '[name].js'
   },
 
@@ -119,7 +120,6 @@ module.exports = {
           options: {
             name: '[name].[hash:10].[ext]',
             outputPath: '',
-            publicPath: '',
             useRelativePath: false
           }
         }
