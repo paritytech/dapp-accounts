@@ -120,7 +120,7 @@ module.exports = {
           options: {
             name: '[name].[hash:10].[ext]',
             outputPath: '',
-            publicPath: 'dist/',
+            publicPath: '',
             useRelativePath: false
           }
         }
