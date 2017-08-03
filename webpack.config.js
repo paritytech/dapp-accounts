@@ -78,7 +78,7 @@ module.exports = {
             {
               loader: 'css-loader',
               options: {
-                minimize: false // true
+                minimize: true
               }
             }
           ]
@@ -117,7 +117,7 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: '[name].[hash:base64:10].[ext]',
+            name: '[name].[hash:10].[ext]',
             outputPath: '',
             publicPath: '',
             useRelativePath: false
