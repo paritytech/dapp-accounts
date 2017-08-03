@@ -23,17 +23,15 @@ const webpack = require('webpack');
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  devtool: isProd
-    ? '#hidden-source-map'
-    : '#source-map',
+  devtool: '#source-map',
   context: path.join(__dirname, 'src'),
   entry: {
-    bundle: './index.js'
+    dist: './index.js'
   },
   output: {
     path: path.join(__dirname, 'dist'),
     publicPath: 'dist/',
-    filename: '[name].js'
+    filename: '../dist.js'
   },
 
   module: {
@@ -120,7 +118,6 @@ module.exports = {
           options: {
             name: '[name].[hash:10].[ext]',
             outputPath: '',
-            publicPath: '',
             useRelativePath: false
           }
         }
@@ -143,7 +140,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: 'bundle.css'
+      filename: '../dist.css'
     }),
     new HappyPack({
       id: 'babel',
@@ -153,10 +150,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: '../index.html',
       template: './index.ejs',
-      chunks: ['bundle']
+      chunks: ['dist']
     }),
     isProd && new webpack.optimize.UglifyJsPlugin({
       screwIe8: true,
+      sourceMap: true,
       compress: {
         warnings: false
       },
