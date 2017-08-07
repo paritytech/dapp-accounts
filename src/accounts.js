@@ -25,7 +25,7 @@ import { bindActionCreators } from 'redux';
 
 import HardwareStore from '@parity/shared/mobx/hardwareStore';
 import { setVisibleAccounts } from '@parity/shared/redux/providers/personalActions';
-import { Actionbar, ActionbarSearch, ActionbarSort, Button, DappLink, Page } from '@parity/ui';
+import { Actionbar, ActionbarSearch, ActionbarSort, Button, DappLink, Page, Tooltip } from '@parity/ui';
 import { AddIcon, KeyIcon, FileDownloadIcon } from '@parity/ui/Icons';
 
 import CreateWallet from './CreateWallet';
@@ -44,8 +44,6 @@ class Accounts extends Component {
     accounts: PropTypes.object.isRequired,
     accountsInfo: PropTypes.object.isRequired,
     availability: PropTypes.string.isRequired,
-    hasAccounts: PropTypes.bool.isRequired,
-    health: PropTypes.object.isRequired,
     setVisibleAccounts: PropTypes.func.isRequired
   }
 
@@ -107,6 +105,16 @@ class Accounts extends Component {
         { this.renderActionbar() }
 
         <Page>
+          <Tooltip
+            className={ styles.accountTooltip }
+            text={
+              <FormattedMessage
+                id='accounts.tooltip.overview'
+                defaultMessage='your accounts are visible for easy access, allowing you to edit the meta information, make transfers, view transactions and fund the account'
+              />
+            }
+          />
+
           { this.renderExternalAccounts() }
           { this.renderWallets() }
           { this.renderAccounts() }
@@ -292,7 +300,18 @@ class Accounts extends Component {
           />
         }
         buttons={ buttons }
-      />
+      >
+        <Tooltip
+          className={ styles.toolbarTooltip }
+          right
+          text={
+            <FormattedMessage
+              id='accounts.tooltip.actions'
+              defaultMessage='actions relating to the current view are available on the toolbar for quick access, be it for performing actions or creating a new item'
+            />
+          }
+        />
+      </Actionbar>
     );
   }
 
@@ -354,10 +373,6 @@ class Accounts extends Component {
   }
 
   renderNewWalletButton () {
-    if (this.props.availability !== 'personal') {
-      return null;
-    }
-
     return (
       <Button
         key='newWallet'
@@ -476,16 +491,13 @@ class Accounts extends Component {
 }
 
 function mapStateToProps (state) {
-  const { accounts, accountsInfo, hasAccounts } = state.personal;
+  const { accounts, accountsInfo } = state.personal;
   const { availability = 'unknown' } = state.nodeStatus.nodeKind || {};
-  const { health } = state.nodeStatus;
 
   return {
     accounts,
     accountsInfo,
-    availability,
-    hasAccounts,
-    health
+    availability
   };
 }
 
