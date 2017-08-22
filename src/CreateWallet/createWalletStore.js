@@ -25,7 +25,7 @@ import Contracts from '@parity/shared/contracts';
 import { foundationWallet as walletAbi } from '@parity/shared/contracts/abi';
 import { wallet as walletCode, walletLibrary as walletLibraryCode, walletLibraryRegKey, fullWalletCode } from '@parity/shared/contracts/code/wallet';
 import { validateUint, validateAddress, validateName } from '@parity/shared/util/validation';
-import { deploy, getSender, loadSender, setSender } from '~/util/tx';
+import { deploy, getSender, loadSender, setSender } from '@parity/shared/util/tx';
 import WalletsUtils from '@parity/shared/util/wallets';
 
 const STEPS = {
