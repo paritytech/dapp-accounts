@@ -131,8 +131,4 @@
     flex: 1;
     overflow: hidden;
   }
-
-  .mainLink h3 {
-    color: rgb(0, 151, 167);
-  }
 }
