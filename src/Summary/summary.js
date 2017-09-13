@@ -129,6 +129,7 @@ class Summary extends Component {
                 ? styles.main
                 : styles.mainLink
             }
+            isOffset
             title={
               <IdentityName
                 address={ address }

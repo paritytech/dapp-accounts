@@ -130,10 +130,5 @@
   .mainLink {
     flex: 1;
     overflow: hidden;
-
-    h3 {
-      margin-left: -72px !important;
-      padding-left: 72px !important;
-    }
   }
 }
