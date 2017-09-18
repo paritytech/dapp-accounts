@@ -29,8 +29,8 @@ module.exports = {
     dist: './src/index.js'
   },
   output: {
-    path: __dirname,
-    publicPath: '',
+    path: path.join(__dirname, 'dist'),
+    publicPath: 'dist/',
     filename: 'dist.js'
   },
 
@@ -116,7 +116,7 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: 'dist/[name].[hash:10].[ext]',
+            name: '[name].[hash:10].[ext]',
             outputPath: '',
             useRelativePath: false
           }
@@ -148,7 +148,7 @@ module.exports = {
       loaders: ['babel-loader']
     }),
     new HtmlWebpackPlugin({
-      filename: 'index.html',
+      filename: '../index.html',
       template: './src/index.ejs',
       chunks: ['dist']
     }),
