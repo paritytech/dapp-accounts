@@ -24,14 +24,14 @@ const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
   devtool: '#source-map',
-  context: path.join(__dirname, 'src'),
+  context: __dirname,
   entry: {
-    dist: './index.js'
+    dist: './src/index.js'
   },
   output: {
-    path: path.join(__dirname, 'dist'),
-    publicPath: 'dist/',
-    filename: '../dist.js'
+    path: __dirname,
+    publicPath: '',
+    filename: 'dist.js'
   },
 
   module: {
@@ -116,8 +116,8 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: '[name].[hash:10].[ext]',
-            outputPath: '../dist/',
+            name: 'dist/[name].[hash:10].[ext]',
+            outputPath: '',
             useRelativePath: false
           }
         }
@@ -140,7 +140,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: '../dist.css'
+      filename: 'dist.css'
     }),
     new HappyPack({
       id: 'babel',
@@ -148,8 +148,8 @@ module.exports = {
       loaders: ['babel-loader']
     }),
     new HtmlWebpackPlugin({
-      filename: '../index.html',
-      template: './index.ejs',
+      filename: 'index.html',
+      template: './src/index.ejs',
       chunks: ['dist']
     }),
     isProd && new webpack.optimize.UglifyJsPlugin({
