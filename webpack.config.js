@@ -29,9 +29,9 @@ module.exports = {
     dist: './src/index.js'
   },
   output: {
-    path: path.join(__dirname, 'dist'),
-    publicPath: 'dist/',
-    filename: 'dist.js'
+    path: __dirname,
+    publicPath: '',
+    filename: 'dist/dist.js'
   },
 
   module: {
@@ -116,7 +116,7 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: '[name].[hash:10].[ext]',
+            name: 'dist/[name].[hash:10].[ext]',
             outputPath: '',
             useRelativePath: false
           }
@@ -140,7 +140,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: 'dist.css'
+      filename: 'dist/dist.css'
     }),
     new HappyPack({
       id: 'babel',
@@ -148,7 +148,7 @@ module.exports = {
       loaders: ['babel-loader']
     }),
     new HtmlWebpackPlugin({
-      filename: '../index.html',
+      filename: './index.html',
       template: './src/index.ejs',
       chunks: ['dist']
     }),
