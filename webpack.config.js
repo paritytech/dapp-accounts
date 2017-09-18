@@ -117,7 +117,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[hash:10].[ext]',
-            outputPath: '',
+            outputPath: '../dist/',
             useRelativePath: false
           }
         }
