@@ -1,6 +1,8 @@
 {
   "presets": [
-    "env", "stage-0", "react"
+    "env",
+    "stage-0",
+    "react"
   ],
   "plugins": [
     "transform-decorators-legacy",
@@ -10,18 +12,10 @@
   ],
   "retainLines": true,
   "env": {
-    "modules": false,
     "production": {
       "plugins": [
         "transform-react-remove-prop-types"
       ]
-    },
-    "development": {
-      "plugins": [
-        [ "react-intl", { "messagesDir": "./.build/i18n/" } ],
-        "react-hot-loader/babel"
-      ]
-    },
-    "test": {}
+    }
   }
 }
