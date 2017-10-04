@@ -35,6 +35,7 @@ export default class Store {
   @observable gethAddresses = [];
   @observable gethImported = [];
   @observable isBusy = false;
+  @observable isTest = false;
   @observable isWindowsPhrase = false;
   @observable name = '';
   @observable nameError = ERRORS.noName;
@@ -120,7 +121,6 @@ export default class Store {
   }
 
   @computed get qrAddressValid () {
-    console.log('qrValid', this.qrAddress, this._api.util.isAddressValid(this.qrAddress));
     return this._api.util.isAddressValid(this.qrAddress);
   }
 
@@ -309,6 +309,10 @@ export default class Store {
 
   @action prevStage = () => {
     this.stage--;
+  }
+
+  @action setIsTest = (isTest) => {
+    this.isTest = isTest;
   }
 
   createAccount = (vaultStore) => {
