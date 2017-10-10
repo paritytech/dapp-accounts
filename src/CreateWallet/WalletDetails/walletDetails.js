@@ -17,18 +17,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
+import { connect } from 'react-redux';
 
 import { Form, TypedInput, Input, AddressSelect, InputAddress } from '@parity/ui';
 
 import styles from '../createWallet.css';
 
-export default class WalletDetails extends Component {
+class WalletDetails extends Component {
   static propTypes = {
     accounts: PropTypes.object.isRequired,
     wallet: PropTypes.object.isRequired,
     errors: PropTypes.object.isRequired,
     onChange: PropTypes.func.isRequired,
-    walletType: PropTypes.string.isRequired
+    walletType: PropTypes.string.isRequired,
+
+    knownAddresses: PropTypes.array
   };
 
   render () {
@@ -104,7 +107,10 @@ export default class WalletDetails extends Component {
   }
 
   renderMultisigDetails () {
-    const { accounts, wallet, errors } = this.props;
+    const { accounts, knownAddresses, wallet, errors } = this.props;
+    const allowedOwners = knownAddresses
+      // Exclude sender and already owners of the wallet
+      .filter((address) => !wallet.owners.includes(address) && address !== wallet.account);
 
     return (
       <Form>
@@ -164,7 +170,7 @@ export default class WalletDetails extends Component {
         />
 
         <TypedInput
-          accounts={ accounts }
+          allowedValues={ allowedOwners }
           label={
             <FormattedMessage
               id='createWallet.details.ownersMulti.label'
@@ -250,3 +256,21 @@ export default class WalletDetails extends Component {
     this.props.onChange({ daylimit });
   }
 }
+
+function mapStateToProps (initState) {
+  const { accounts, contacts, contracts } = initState.personal;
+  const knownAddresses = [].concat(
+    Object.keys(accounts),
+    Object.keys(contacts),
+    Object.keys(contracts)
+  );
+
+  return () => ({
+    knownAddresses
+  });
+}
+
+export default connect(
+  mapStateToProps,
+  null
+)(WalletDetails);
