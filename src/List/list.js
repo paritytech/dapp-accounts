@@ -18,10 +18,8 @@ import { pick } from 'lodash';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 import { ETH_TOKEN } from '@parity/shared/util/tokens';
-import { fetchCertifiers, fetchCertifications } from '@parity/shared/redux/providers/certifications/actions';
 import { Container, SectionList } from '@parity/ui';
 
 import Summary from '../Summary';
@@ -39,19 +37,8 @@ class List extends Component {
     orderFallback: PropTypes.string,
     search: PropTypes.array,
 
-    fetchCertifiers: PropTypes.func.isRequired,
-    fetchCertifications: PropTypes.func.isRequired,
     handleAddSearchToken: PropTypes.func
   };
-
-  componentWillMount () {
-    const { accounts, fetchCertifiers, fetchCertifications } = this.props;
-
-    fetchCertifiers();
-    for (let address in accounts) {
-      fetchCertifications(address);
-    }
-  }
 
   render () {
     const { accounts, disabled, empty } = this.props;
@@ -265,14 +252,7 @@ function mapStateToProps (state, props) {
   return { balances, certifications };
 }
 
-function mapDispatchToProps (dispatch) {
-  return bindActionCreators({
-    fetchCertifiers,
-    fetchCertifications
-  }, dispatch);
-}
-
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  null
 )(List);
