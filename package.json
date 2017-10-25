@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "@parity/api": "^2",
-    "@parity/dapp-vaults": "paritytech/dapp-vaults",
     "@parity/shared": "^2",
     "@parity/ui": "^2",
     "babel-cli": "^6.26.0",
@@ -78,6 +77,8 @@
     "url-loader": "^0.5.8",
     "webpack": "^3.5.5"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@parity/dapp-vaults": "paritytech/dapp-vaults"
+  },
   "peerDependencies": {}
 }
