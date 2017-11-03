@@ -20,8 +20,7 @@
 
   .info {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
 
     .account {
       display: flex;
@@ -99,7 +98,7 @@
     &.selected {
       > img {
         background: white;
-        border-color: #2185D0;
+        border-color: #2185d0;
       }
     }
 
@@ -140,7 +139,7 @@
 
 .summary {
   line-height: 1.618em;
-  padding: 0 4em 1.5em 4em;
+  padding: 0 4em 1.5em;
   text-align: center;
 }
 

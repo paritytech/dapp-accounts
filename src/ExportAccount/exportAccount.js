@@ -22,7 +22,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { newError } from '@parity/shared/redux/actions';
-import { personalAccountsInfo } from '@parity/shared/redux/providers/personalActions';
 import { AccountCard, Button, Portal, SelectionList } from '@parity/ui';
 import { CancelIcon, CheckIcon } from '@parity/ui/Icons';
 
@@ -39,7 +38,6 @@ class ExportAccount extends Component {
     accounts: PropTypes.object.isRequired,
     balances: PropTypes.object.isRequired,
     newError: PropTypes.func.isRequired,
-    personalAccountsInfo: PropTypes.func.isRequired,
     onClose: PropTypes.func.isRequired
   };
 
@@ -95,7 +93,6 @@ class ExportAccount extends Component {
 
   renderList () {
     const { accounts } = this.props;
-
     const { selectedAccounts } = this.exportStore;
 
     const accountList = Object.values(accounts)
@@ -168,8 +165,7 @@ function mapStateToProps (state) {
 
 function mapDispatchToProps (dispatch) {
   return bindActionCreators({
-    newError,
-    personalAccountsInfo
+    newError
   }, dispatch);
 }
 

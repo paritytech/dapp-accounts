@@ -18,10 +18,7 @@ import { observer } from 'mobx-react';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
-import { setRequest } from '@parity/shared/redux/providers/requestsActions';
 import { Button, Portal } from '@parity/ui';
 import { CancelIcon, DoneIcon, NextIcon } from '@parity/ui/Icons';
 
@@ -31,15 +28,14 @@ import WalletInfo from './WalletInfo';
 import CreateWalletStore from './createWalletStore';
 
 @observer
-export class CreateWallet extends Component {
+export default class CreateWallet extends Component {
   static contextTypes = {
     api: PropTypes.object.isRequired
   };
 
   static propTypes = {
     accounts: PropTypes.object.isRequired,
-    onClose: PropTypes.func.isRequired,
-    onSetRequest: PropTypes.func.isRequired
+    onClose: PropTypes.func.isRequired
   };
 
   store = new CreateWalletStore(this.context.api, this.props);
@@ -193,14 +189,3 @@ export class CreateWallet extends Component {
     this.props.onClose();
   }
 }
-
-function mapDispatchToProps (dispatch) {
-  return bindActionCreators({
-    onSetRequest: setRequest
-  }, dispatch);
-}
-
-export default connect(
-  null,
-  mapDispatchToProps
-)(CreateWallet);

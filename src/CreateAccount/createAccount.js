@@ -21,7 +21,7 @@ import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { createIdentityImg } from '@parity/api/util/identity';
+import { createIdentityImg } from '@parity/api/lib/util/identity';
 import { newError } from '@parity/shared/redux/actions';
 import { Button, ModalBox, Portal } from '@parity/ui';
 import { CancelIcon, CheckIcon, DoneIcon, NextIcon, PrevIcon, PrintIcon } from '@parity/ui/Icons';

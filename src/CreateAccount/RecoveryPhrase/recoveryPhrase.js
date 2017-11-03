@@ -43,13 +43,13 @@ export default class RecoveryPhrase extends Component {
             autoFocus
             error={
               passPhraseError
-              ? (
-                <FormattedMessage
-                  id='createAccount.recoveryPhrase.passPhrase.error'
-                  defaultMessage='enter a recovery phrase'
-                />
-              )
-              : null
+                ? (
+                  <FormattedMessage
+                    id='createAccount.recoveryPhrase.passPhrase.error'
+                    defaultMessage='enter a recovery phrase'
+                  />
+                )
+                : null
             }
             hint={
               <FormattedMessage

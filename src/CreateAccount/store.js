@@ -16,7 +16,7 @@
 
 import { action, computed, observable, transaction } from 'mobx';
 
-import apiutil from '@parity/api/util';
+import apiutil from '@parity/api/lib/util';
 
 import ERRORS from './errors';
 
@@ -192,8 +192,8 @@ export default class Store {
 
     // FIXME: Current native signer encoding is not 100% for EIP-55, lowercase for now
     this.qrAddress = qrAddress && this._api.util
-        ? this._api.util.toChecksumAddress(qrAddress.toLowerCase())
-        : qrAddress;
+      ? this._api.util.toChecksumAddress(qrAddress.toLowerCase())
+      : qrAddress;
   }
 
   @action setVaultName = (vaultName) => {
