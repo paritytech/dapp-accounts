@@ -23,7 +23,7 @@ import { isEqual } from 'lodash';
 import ReactTooltip from 'react-tooltip';
 import { FormattedMessage } from 'react-intl';
 
-import { arrayOrObjectProptype, nullableProptype } from '@parity/shared/util/proptypes';
+import { arrayOrObjectProptype, nullableProptype } from '@parity/shared/lib/util/proptypes';
 import { Balance, Certifications, Container, ContainerTitle, CopyToClipboard, IdentityIcon, IdentityName, Tags, VaultTag } from '@parity/ui';
 
 import styles from '../accounts.css';

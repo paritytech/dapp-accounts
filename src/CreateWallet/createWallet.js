@@ -20,7 +20,7 @@ import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
 import { Button, Portal } from '@parity/ui';
-import { CancelIcon, DoneIcon, NextIcon } from '@parity/ui/Icons';
+import { CancelIcon, DoneIcon, NextIcon } from '@parity/ui/lib/Icons';
 
 import WalletType from './WalletType';
 import WalletDetails from './WalletDetails';

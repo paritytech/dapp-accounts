@@ -17,7 +17,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { AccountsIcon, DoneIcon, FileIcon, FileUploadIcon, KeyboardIcon, KeyIcon, MembershipIcon, QrIcon } from '@parity/ui/Icons';
+import { AccountsIcon, DoneIcon, FileIcon, FileUploadIcon, KeyboardIcon, KeyIcon, MembershipIcon, QrIcon } from '@parity/ui/lib/Icons';
 
 import { STAGE_INFO } from '../store';
 

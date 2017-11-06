@@ -22,9 +22,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { createIdentityImg } from '@parity/api/lib/util/identity';
-import { newError } from '@parity/shared/redux/actions';
+import { newError } from '@parity/shared/lib/redux/actions';
 import { Button, ModalBox, Portal } from '@parity/ui';
-import { CancelIcon, CheckIcon, DoneIcon, NextIcon, PrevIcon, PrintIcon } from '@parity/ui/Icons';
+import { CancelIcon, CheckIcon, DoneIcon, NextIcon, PrevIcon, PrintIcon } from '@parity/ui/lib/Icons';
 
 import ParityLogo from '@parity/shared/assets/images/parity-logo-black-no-text.svg';
 

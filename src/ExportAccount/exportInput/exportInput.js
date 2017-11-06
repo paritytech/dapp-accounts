@@ -18,7 +18,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
-import { Input } from '@parity/ui/Form';
+import { Input } from '@parity/ui/lib/Form';
 
 export default class ExportInput extends Component {
   static propTypes = {

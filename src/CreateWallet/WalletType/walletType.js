@@ -18,7 +18,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
-import { walletSourceURL } from '@parity/shared/contracts/code/wallet';
+import { walletSourceURL } from '@parity/shared/lib/contracts/code/wallet';
 import { RadioButtons } from '@parity/ui';
 
 const TYPES = [

@@ -19,7 +19,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { ETH_TOKEN } from '@parity/shared/util/tokens';
+import { ETH_TOKEN } from '@parity/shared/lib/util/tokens';
 import { Container, SectionList } from '@parity/ui';
 
 import Summary from '../Summary';

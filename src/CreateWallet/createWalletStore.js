@@ -21,12 +21,12 @@ import { FormattedMessage } from 'react-intl';
 
 import Contract from '@parity/api/lib/contract';
 import { toWei } from '@parity/api/lib/util/wei';
-import Contracts from '@parity/shared/contracts';
-import { foundationWallet as walletAbi } from '@parity/shared/contracts/abi';
-import { wallet as walletCode, walletLibrary as walletLibraryCode, walletLibraryRegKey, fullWalletCode } from '@parity/shared/contracts/code/wallet';
-import { validateUint, validateAddress, validateName } from '@parity/shared/util/validation';
-import { deploy, getSender, loadSender, setSender } from '@parity/shared/util/tx';
-import WalletsUtils from '@parity/shared/util/wallets';
+import Contracts from '@parity/shared/lib/contracts';
+import { foundationWallet as walletAbi } from '@parity/shared/lib/contracts/abi';
+import { wallet as walletCode, walletLibrary as walletLibraryCode, walletLibraryRegKey, fullWalletCode } from '@parity/shared/lib/contracts/code/wallet';
+import { validateUint, validateAddress, validateName } from '@parity/shared/lib/util/validation';
+import { deploy, getSender, loadSender, setSender } from '@parity/shared/lib/util/tx';
+import WalletsUtils from '@parity/shared/lib/util/wallets';
 
 const STEPS = {
   TYPE: {

@@ -20,8 +20,8 @@ import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
 import { Button, Form, Input, IdentityIcon, Loading } from '@parity/ui';
-import PasswordStrength from '@parity/ui/Form/PasswordStrength';
-import { RefreshIcon } from '@parity/ui/Icons';
+import PasswordStrength from '@parity/ui/lib/Form/PasswordStrength';
+import { RefreshIcon } from '@parity/ui/lib/Icons';
 
 import ChangeVault from '../ChangeVault';
 import styles from '../createAccount.css';

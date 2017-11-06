@@ -23,10 +23,10 @@ import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import HardwareStore from '@parity/shared/mobx/hardwareStore';
-import { setVisibleAccounts } from '@parity/shared/redux/providers/personalActions';
+import HardwareStore from '@parity/shared/lib/mobx/hardwareStore';
+import { setVisibleAccounts } from '@parity/shared/lib/redux/providers/personalActions';
 import { Actionbar, ActionbarSearch, ActionbarSort, Button, DappLink, Page } from '@parity/ui';
-import { AddIcon, KeyIcon, FileDownloadIcon } from '@parity/ui/Icons';
+import { AddIcon, KeyIcon, FileDownloadIcon } from '@parity/ui/lib/Icons';
 
 import CreateWallet from './CreateWallet';
 import CreateAccount from './CreateAccount';

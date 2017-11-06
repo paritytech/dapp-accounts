@@ -20,7 +20,7 @@ import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
 import { Checkbox, Form, Input, Warning } from '@parity/ui';
-import PasswordStrength from '@parity/ui/Form/PasswordStrength';
+import PasswordStrength from '@parity/ui/lib/Form/PasswordStrength';
 
 import ChangeVault from '../ChangeVault';
 import styles from '../createAccount.css';
